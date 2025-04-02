@@ -1,0 +1,17 @@
+.breadcrumb {
+  margin-bottom: 40px;
+  &__list {
+    color: #969eae;
+    display: flex;
+    gap: 19px;
+  }
+  &__item {
+    position: relative;
+    &:not(:last-child)::after {
+      position: absolute;
+      content: '>';
+      top: 0;
+      right: -12px;
+    }
+  }
+}
