@@ -118,7 +118,7 @@
         </div>
       </div>
 
-      <!-- <section class="goods">
+      <section class="goods">
         <div class="container">
           <h2 class="goods__title">Избранное</h2>
           <ul class="goods__list">
@@ -216,7 +216,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="product">
         <div class="container product__container">
@@ -225,6 +225,9 @@
             <div class="product__slider">
               <img class="product__slider-image" src="/public/img/ski.png" alt="Лыжи" />
               <ul class="product__slider-thumbnails slider-thumbnails">
+                <li class="slider-thumbnails__item">
+                  <img class="slider-thumbnails__image" src="/public/img/ski-mini.png" alt="" />
+                </li>
                 <li class="slider-thumbnails__item">
                   <img class="slider-thumbnails__image" src="/public/img/ski-mini.png" alt="" />
                 </li>
@@ -266,18 +269,20 @@
                   <td class="product__table-item">130 кг</td>
                 </tr>
               </table>
-              <button class="product__button" type="button">В корзину</button>
-              <button class="product__like-button" type="button">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8.41331 13.8733C8.18665 13.9533 7.81331 13.9533 7.58665 13.8733C5.65331 13.2133 1.33331 10.46 1.33331 5.79332C1.33331 3.73332 2.99331 2.06665 5.03998 2.06665C6.25331 2.06665 7.32665 2.65332 7.99998 3.55998C8.67331 2.65332 9.75331 2.06665 10.96 2.06665C13.0066 2.06665 14.6666 3.73332 14.6666 5.79332C14.6666 10.46 10.3466 13.2133 8.41331 13.8733Z"
-                    fill="white"
-                    stroke="#1C1C1C"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
+              <div class="info-buttons">
+                <button class="info-buttons__to-cart" type="button">В корзину</button>
+                <button class="info-buttons__like" type="button">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.41331 13.8733C8.18665 13.9533 7.81331 13.9533 7.58665 13.8733C5.65331 13.2133 1.33331 10.46 1.33331 5.79332C1.33331 3.73332 2.99331 2.06665 5.03998 2.06665C6.25331 2.06665 7.32665 2.65332 7.99998 3.55998C8.67331 2.65332 9.75331 2.06665 10.96 2.06665C13.0066 2.06665 14.6666 3.73332 14.6666 5.79332C14.6666 10.46 10.3466 13.2133 8.41331 13.8733Z"
+                      fill="white"
+                      stroke="#1C1C1C"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -342,37 +347,41 @@
 
       <section class="order">
         <div class="container">
-          <h3 class="order__title">Заказ успешно размещен</h3>
-          <p class="order__price">20 000 ₽</p>
-          <p class="order__id">№43435</p>
-          <h3 class="order__info">Данные доставки</h3>
-          <table class="order__table">
-            <tr class="order__table-row">
-              <td class="order__table-item">Получатель</td>
-              <td class="order__table-item">Иванов Петр Александрович</td>
-            </tr>
-            <tr class="order__table-row">
-              <td class="order__table-item">Телефон</td>
-              <td class="order__table-item">+7 (737) 346 23 00</td>
-            </tr>
-            <tr class="order__table-row">
-              <td class="order__table-item">E-mail</td>
-              <td class="order__table-item">Ivanov84@gmail.com</td>
-            </tr>
-            <tr class="order__table-row">
-              <td class="order__table-item">Адрес доставки</td>
-              <td class="order__table-item">Москва, ул. Ленина, 21, кв. 33</td>
-            </tr>
-            <tr class="order__table-row">
-              <td class="order__table-item">Способ оплаты</td>
-              <td class="order__table-item">Картой при получении</td>
-            </tr>
-            <tr class="order__table-row">
-              <td class="order__table-item">Способ получения</td>
-              <td class="order__table-item">Доставка</td>
-            </tr>
-          </table>
-          <button class="order__button">На главную</button>
+          <div class="order__inner">
+            <div class="order__header">
+              <h3 class="order__title">Заказ успешно размещен</h3>
+              <p class="order__price">20 000 ₽</p>
+            </div>
+            <p class="order__id">№43435</p>
+            <h3 class="order__info">Данные доставки</h3>
+            <table class="order__table">
+              <tr class="order__table-row">
+                <td class="order__table-item">Получатель</td>
+                <td class="order__table-item">Иванов Петр Александрович</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Телефон</td>
+                <td class="order__table-item">+7 (737) 346 23 00</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">E-mail</td>
+                <td class="order__table-item">Ivanov84@gmail.com</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Адрес доставки</td>
+                <td class="order__table-item">Москва, ул. Ленина, 21, кв. 33</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ оплаты</td>
+                <td class="order__table-item">Картой при получении</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ получения</td>
+                <td class="order__table-item">Доставка</td>
+              </tr>
+            </table>
+            <button class="order__button">На главную</button>
+          </div>
         </div>
       </section>
     </main>
